@@ -4,7 +4,7 @@ import Payment from '../../assets/payments.png';
 
 import React from "react";
 import "./Footer.scss";
-const Footer = () => {
+const Footer = () => { 
     return (
         <footer className="footer">
              <div className="footer-content">
