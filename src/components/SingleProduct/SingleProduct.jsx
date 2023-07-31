@@ -7,10 +7,10 @@ import {
     FaInstagram,
     FaPinterest,
     FaCartPlus
-} from 'react-icons/fa'
-
+} from 'react-icons/fa';
 // import prod from "../../assets/products/"
-import prod from "../../assets/products/earbuds-prod-2.webp" 
+
+// import prod from "../../assets/products/earbuds-prod-2.webp" 
 
 const SingleProduct = () => {
     return <div className="single-product-main-content">
@@ -45,7 +45,7 @@ const SingleProduct = () => {
                          </span>
 
                          <span className="text-bold"> 
-                            Share:
+                                Share:
                             <span className="social-icons">
                                 <FaFacebook size={16} />
                                 <FaTwitter size={16} />
