@@ -12,6 +12,7 @@ import "./Header.scss";
 
 const Header = () => {
     const[scrolled,setScrolled] = useState(false);
+    const [showCart,setShowCart] = useState(false);
     const handleScroll = () =>{
         const offset = window.scrollY;
         console.log(offset);
@@ -28,25 +29,28 @@ const Header = () => {
     },[])
     
     return (
-
-    <header className={`main-header ${scrolled? "sticky-header " : ""} `}> 
-        <div className="header-content">
-            <ul className="left">
-                <l1 className="list_items"> Home</l1> 
-                <l1 className="list_items"> About </l1>
-                <l1 className="list_items"> Categories </l1>   
-            </ul>
-            <div className="center"> JSBABA </div>
-            <div className="right">
-                <TbSearch />
-                <AiOutlineHeart />
-                <span className="cart-icon">
-                    <CgShoppingCart />
-                     <span>5</span>
-                </span>
+        //  Empty fragement is for removing the error  
+        <>           
+        <header className={`main-header ${scrolled? "sticky-header " : ""} `}> 
+            <div className="header-content">
+                <ul className="left">
+                    <l1 className="list_items"> Home</l1> 
+                    <l1 className="list_items"> About </l1>
+                    <l1 className="list_items"> Categories </l1>   
+                </ul>
+                <div className="center"> JSBABA </div>
+                <div className="right">
+                    <TbSearch />
+                    <AiOutlineHeart />
+                    <span className="cart-icon">
+                        <CgShoppingCart />
+                        <span>5</span>
+                    </span>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
+        { showCart &&  <Cart />}
+    </>             //  Empty fragement is for removing the error 
     );
 };
 
