@@ -53,7 +53,6 @@ const Header = () => {
         </header>
         { showCart &&  <Cart  setShowCart= {setShowCart} />}
         {showSearch &&  <Search setShowSearch={setShowSearch} />}
-
     </>             //  Empty fragement is for removing the error 
     );
 };
