@@ -17,7 +17,7 @@ const Header = () => {
 
     const handleScroll = () =>{
         const offset = window.scrollY;
-        console.log(offset);
+        // console.log(offset);
         if(offset>200){
             setScrolled(true);
         }else{
@@ -36,9 +36,9 @@ const Header = () => {
         <header className={`main-header ${scrolled? "sticky-header " : ""} `}> 
             <div className="header-content">
                 <ul className="left">
-                    <l1 className="list_items"> Home</l1> 
-                    <l1 className="list_items"> About </l1>
-                    <l1 className="list_items"> Categories </l1>   
+                    <li className="list_items"> Home</li> 
+                    <li className="list_items"> About </li>
+                    <li className="list_items"> Categories </li>   
                 </ul>
                 <div className="center"> JSBABA </div>
                 <div className="right">
