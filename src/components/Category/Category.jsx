@@ -18,7 +18,7 @@ const Category = () => {
                     <div className="category-title">  {data?.data?.[0]?.attributes?.categories?.data?.[0]?.attributes?.title} </div>
                     {/* <Cat innerPage={true}/> */}
                     <Products innerPage={true} products={data} /> 
-                </div>
+                </div> 
             </div>
 
             );

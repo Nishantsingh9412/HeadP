@@ -4,7 +4,7 @@ import { fetchDataFromApi } from "../utils/api";
 const useFetch = (endpoint) => {                // endpoint ----> Jis URL Pr API call krwanin hai 
     const [data,setData] = useState()
 
-    useEffect(async () => {
+    useEffect(() => {
         makeApiCall()
     },[endpoint])
 
